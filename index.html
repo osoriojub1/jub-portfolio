@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -67,7 +68,7 @@
       display: flex;
       justify-content: center;
       background: #fff;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
       position: sticky;
       top: 0;
       z-index: 1000;
@@ -106,7 +107,9 @@
       text-align: justify;
     }
 
-    .skills-list, .projects-list, .education-list {
+    .skills-list,
+    .projects-list,
+    .education-list {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 1.5rem;
@@ -116,13 +119,13 @@
       background: #fff;
       padding: 1.5rem;
       border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
       transition: transform 0.3s, box-shadow 0.3s;
     }
 
     .card:hover {
       transform: translateY(-8px);
-      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     }
 
     .contact-links {
@@ -131,6 +134,20 @@
       gap: 2rem;
       margin-top: 2rem;
     }
+
+    .videos-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .videos-list video {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 1rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
 
     .contact-links a {
       text-decoration: none;
@@ -160,13 +177,27 @@
 
     /* Animations */
     @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(-20px); }
-      to { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     @media (max-width: 768px) {
@@ -195,12 +226,14 @@
   </style>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
   <header>
     <div class="header-content">
       <img src="profile.jpg" alt="Portfolio Picture">
       <h1>Jubilee Osorio</h1>
-      <p>IT Graduate | AI Solutions | Data Annotation & QA Expert | Customer Service Representative | Aspiring Virtual Assistant</p>
+      <p>IT Graduate | AI Solutions | Data Annotation & QA Expert | Customer Service Representative | Aspiring Virtual
+        Assistant</p>
     </div>
   </header>
 
@@ -215,7 +248,12 @@
   <section id="about" class="about">
     <h2>About Me</h2>
     <p>
-      Bachelor of Science in Information Technology graduate with over 3 years of professional experience in customer service, technical support, and back-office operations. Skilled in data annotation, document verification, administrative support, and quality assurance. Holder of National Certificate II in English Language Proficiency and Contact Center Services. Recognized for attention to detail, problem-solving, and leadership skills as former President of the Supreme Student Government. Adaptable professional with a strong commitment to delivering accurate, reliable, and high-quality results.
+      Bachelor of Science in Information Technology graduate with over 3 years of professional experience in customer
+      service, technical support, and back-office operations. Skilled in data annotation, document verification,
+      administrative support, and quality assurance. Holder of National Certificate II in English Language Proficiency
+      and Contact Center Services. Recognized for attention to detail, problem-solving, and leadership skills as former
+      President of the Supreme Student Government. Adaptable professional with a strong commitment to delivering
+      accurate, reliable, and high-quality results.
     </p>
   </section>
 
@@ -229,7 +267,7 @@
       <div class="card">Quality Assurance & Compliance Monitoring</div>
       <div class="card">Automation Tools: n8n</div>
       <div class="card">AI Tools: ChatGPT, Claude, Prompt Engineering</div>
-      <div class="card">Web Development (Basics)</div>
+      <div class="card">Web Development (Basics: HTML, CSS, JavaScript, PHP, MySQL)</div>
       <div class="card">Microsoft Office & Google Suite</div>
       <div class="card">Canva & Digital Content Creation</div>
       <div class="card">Leadership, Team Collaboration & Training</div>
@@ -242,35 +280,75 @@
     <div class="projects-list">
       <div class="card">
         <h3>Customer Service & Technical Support</h3>
-        <p>Worked at Panasiatic Solutions Inc. (2016 - 2019) handling CSR, Technical Support, Back-office, and Executive Resolution Department responsibilities.</p>
+        <p>Worked at Panasiatic Solutions Inc. (2016 - 2019) handling CSR, Technical Support, Back-office, and Executive
+          Resolution Department responsibilities.</p>
       </div>
       <div class="card">
         <h3>Data Annotation</h3>
-        <p>Performed high-precision data labeling including LiDAR for self-driving car AI models at Remotasks (2020 - 2021).</p>
+        <p>Performed high-precision data labeling including LiDAR for self-driving car AI models at Remotasks (2020 -
+          2021).</p>
       </div>
       <div class="card">
         <h3>Administrative Roles</h3>
-        <p>Served as Document Verifier and Admin Assistant at the Local Government Unit, Municipality of Valladolid, ensuring compliance and record accuracy.</p>
+        <p>Served as Document Verifier and Admin Assistant at the Local Government Unit, Municipality of Valladolid,
+          ensuring compliance and record accuracy.</p>
       </div>
       <div class="card">
         <h3>SSG Leadership Projects</h3>
-        <p>Led school-wide initiatives as President of the Supreme Student Government (2022 - 2024), overseeing event quality, planning, and execution.</p>
+        <p>Led school-wide initiatives as President of the Supreme Student Government (2022 - 2024), overseeing event
+          quality, planning, and execution.</p>
       </div>
       <div class="card">
         <h3>Content & Writing</h3>
-        <p>Contributed to the School Publication (2022 - 2024) through literary writing, article writing, proof-reading, and social media management.</p>
+        <p>Contributed to the School Publication (2022 - 2024) through literary writing, article writing, proof-reading,
+          and social media management.</p>
       </div>
       <div class="card">
         <h3>OJT Experience</h3>
-        <p>Completed on-the-job training at the General Services Office Valladolid (2024), focusing on inventory management and data entry.</p>
+        <p>Completed on-the-job training at the General Services Office Valladolid (2024), focusing on inventory
+          management and data entry.</p>
       </div>
       <div class="card">
         <h3>Non-Profit Work</h3>
-        <p>Supported Educators of Negros Island Incorporated (2024 - Present) as Admin Assistant, applying Canva and MS Office for program activities.</p>
+        <p>Supported Educators of Negros Island Incorporated (2024 - Present) as Admin Assistant, applying Canva and MS
+          Office for program activities.</p>
       </div>
       <div class="card">
         <h3>AI Automation</h3>
         <p>Experience in creating automated workflows using n8n for various tasks.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="videos" class="videos">
+    <h2>Project Demo Videos</h2>
+    <div class="videos-list">
+      <div class="card">
+        <h3>A simple pipeline demonstration using n8n.</h3>
+        <video controls>
+          <source src="ai-automation.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p>Webhook • Google Spreadsheet • Airtable • Gmail</p>
+      </div>
+
+      <div class="card">
+        <h3>Quality Assurance Reviewer workflow using n8n</h3>
+        <video controls>
+          <source src="QA-AI.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p>Schedule Trigger • Google Drive • Filter • Switch for rerouting according to File Type • Convert Binary to JSON • Send to QA AI Agent •
+          Parse JSON Output • Format output • Slack.</p>
+      </div>
+
+      <div class="card">
+        <h3>Office Supply Inventory Management System</h3>
+        <video controls>
+          <source src="capstone.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p>HTML • CSS • JavaScript • PHP • MySQL</p>
       </div>
     </div>
   </section>
@@ -315,7 +393,7 @@
     const options = { threshold: 0.1 };
     const observer = new IntersectionObserver((entries, observer) => {
       entries.forEach(entry => {
-        if(entry.isIntersecting) {
+        if (entry.isIntersecting) {
           entry.target.style.animation = 'fadeUp 1s ease-in-out';
           observer.unobserve(entry.target);
         }
@@ -327,4 +405,5 @@
     });
   </script>
 </body>
+
 </html>
